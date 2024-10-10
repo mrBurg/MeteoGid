@@ -11,10 +11,10 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-explicit-any': 'off',
   },
-  rules:
+  /* rules:
     process.env.NODE_ENV === 'production'
       ? {
           'no-console': 'warn',
         }
-      : {},
+      : {}, */
 };
