@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 
 export default function Page() {
-  const [posts, setPosts] = useState<any>(null);
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -18,11 +18,13 @@ export default function Page() {
     fetchPosts();
   }, []);
 
-  if (!posts) return <div>Loading...</div>;
+  if (!posts) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <ul>
-      {Object.entries(posts).map((post: any) => (
+      {Object.entries(posts).map((post) => (
         <li key={post[0]}>
           {post[0]}
           &nbsp;
