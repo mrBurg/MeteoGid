@@ -7,7 +7,7 @@ import style from './index.module.scss';
 const contacts = [
   {
     name: 'Tsytok Ruslan',
-    email: 'post_tsr@ukr.net',
+    email: 'tsrusp@gmail.com',
   },
   {
     name: 'Burhonov Fedir',
