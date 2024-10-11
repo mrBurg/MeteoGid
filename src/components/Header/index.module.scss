@@ -1,13 +1,14 @@
 @import './../../styles/variables';
 
 .header {
-    height: 80px;
+    min-height: 80px;
     background-color: $component-background-color;
     border-radius: 80px 0 0 0;
     display: flex;
     align-items: center;
     column-gap: 1em;
     padding: 0 5em;
+    flex-wrap: wrap;
 
     a {
         color: $misty-blue;

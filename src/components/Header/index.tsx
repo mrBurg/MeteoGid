@@ -7,9 +7,9 @@ import { Logo } from '../Logo';
 
 export function Header() {
   return (
-    <div className={classNames(style.header)}>
+    <header className={classNames(style.header)}>
       <Logo />
       <Nav />
-    </div>
+    </header>
   );
 }
