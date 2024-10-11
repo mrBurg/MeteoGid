@@ -1,5 +1,6 @@
 'use client';
 
+import { Content } from '@/components/Content';
 import { useEffect, useState } from 'react';
 
 export default function Page() {
@@ -23,14 +24,17 @@ export default function Page() {
   }
 
   return (
-    <ul>
-      {Object.entries(posts).map((post) => (
-        <li key={post[0]}>
-          {post[0]}
-          &nbsp;
-          {post[1]}
-        </li>
-      ))}
-    </ul>
+    <>
+      <Content />
+      <ul>
+        {Object.entries(posts).map((post) => (
+          <li key={post[0]}>
+            {post[0]}
+            &nbsp;
+            {post[1]}
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }

@@ -1,0 +1,10 @@
+@import './../../styles/variables';
+
+.footer {
+    // text-align: center;
+    border-radius: 0 0 80px 0;
+    background-color: darken($component-background-color, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

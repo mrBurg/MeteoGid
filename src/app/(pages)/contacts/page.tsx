@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 
-import { style } from './style.module.scss';
+import style from './index.module.scss';
+import { Content } from '@/components/Content';
 
 export default async function Page() {
   const data = await fetch(
@@ -19,20 +20,21 @@ export default async function Page() {
     },
   } = await data.json();
 
-  console.log(style);
-
   return (
-    <div className={classNames(style)}>
-      <ul>
-        <li>{feels_like}</li>
-        <li>{temp}</li>
-        <li>{temp_min}</li>
-        <li>{temp_max}</li>
-        <li>{pressure}</li>
-        <li>{humidity}</li>
-        <li>{sea_level}</li>
-        <li>{grnd_level}</li>
-      </ul>
-    </div>
+    <>
+      <Content />
+      <div className={classNames(style.page)}>
+        <ul>
+          <li>{feels_like}</li>
+          <li>{temp}</li>
+          <li>{temp_min}</li>
+          <li>{temp_max}</li>
+          <li>{pressure}</li>
+          <li>{humidity}</li>
+          <li>{sea_level}</li>
+          <li>{grnd_level}</li>
+        </ul>
+      </div>
+    </>
   );
 }

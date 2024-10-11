@@ -1,0 +1,12 @@
+@import './../../styles/variables';
+
+.nav {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    color: $background-color;
+
+    .active {
+        text-decoration: underline;
+    }
+}

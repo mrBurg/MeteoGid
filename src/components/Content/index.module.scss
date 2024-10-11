@@ -1,0 +1,15 @@
+@import './../../styles/variables';
+
+.content {
+    color: $background-color;
+    position: relative;
+}
+
+.img {
+    // object-fit: contain;
+    position: relative !important;
+}
+
+.cols {
+    display: flex;
+}
