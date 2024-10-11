@@ -5,7 +5,8 @@
     grid-template-rows: 1fr 50px;
     min-height: 100svh;
     background: $background-color url('/images/background.jpg') center 100% /
-        cover;
+        cover fixed;
+
     padding: 0 10%;
 }
 
