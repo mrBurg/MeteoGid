@@ -1,40 +1,31 @@
 'use client';
 
-import { Content } from '@/components/Content';
-import { useEffect, useState } from 'react';
+import classNames from 'classnames';
+
+import style from './index.module.scss';
 
 export default function Page() {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const data = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}?q=Odesa&appid=${process.env.NEXT_PUBLIC_API_KEY}`
-      );
-      const { main } = await data.json();
-
-      setPosts(main);
-    };
-
-    fetchPosts();
-  }, []);
-
-  if (!posts) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <>
-      <Content />
-      <ul>
-        {Object.entries(posts).map((post) => (
-          <li key={post[0]}>
-            {post[0]}
-            &nbsp;
-            {post[1]}
-          </li>
-        ))}
-      </ul>
+      <h1 className={classNames(style.title)}>Контакти:</h1>
+      <div className={classNames(style.content)}>
+        <p>
+          <span className={classNames(style.bold)}>MeteoGid</span> – додаток
+          призначений для персоналізованого прогнозування погоди, надаючи
+          користувачам індивідуальні рекомендації щодо погодних умов з акцентом
+          на push - сповіщення.
+        </p>
+        <p>
+          Додаток допомагає користувачам планувати свій день, вдягатися
+          відповідно до погоди, та завчасно реагувати на важливі зміни (опади,
+          сильний вітер, заморозки).
+        </p>
+        <p>
+          Крім того, користувачі зможуть отримувати погодні дані для різних
+          країн та регіонів світу, включаючи прогнози на кілька днів, показники
+          вологості, швидкості вітру, атмосферного тиску та інших параметрів.
+        </p>
+      </div>
     </>
   );
 }

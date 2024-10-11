@@ -9,54 +9,59 @@ import style from './index.module.scss';
 export function Content() {
   return (
     <div className={classNames(style.content)}>
-      {/* <div> */}
       <Image
-        className={classNames(style.img)}
         src="/images/weather.png"
         alt=""
-        /* width={100} height={500}  */ fill={true}
+        width={1100}
+        height={600}
+        layout="responsive"
       />
       <Image
-        className={classNames(style.img)}
         src="/images/radar.png"
         alt=""
-        /* width={100} height={500}  */ fill={true}
+        width={1100}
+        height={600}
+        layout="responsive"
       />
       <div className={classNames(style.cols)}>
         <Image
-          className={classNames(style.img)}
           src="/images/forecast.png"
           alt=""
-          /* width={100} height={500}  */ fill={true}
+          width={550}
+          height={300}
+          layout="responsive"
         />
         <Image
-          className={classNames(style.img)}
           src="/images/forecast_current.png"
           alt=""
-          /* width={100} height={500}  */ fill={true}
+          width={550}
+          height={300}
+          layout="responsive"
         />
       </div>
       <Image
-        className={classNames(style.img)}
         src="/images/weather_props.png"
         alt=""
-        /* width={100} height={500}  */ fill={true}
+        width={1100}
+        height={600}
+        layout="responsive"
       />
       <div className={classNames(style.cols)}>
         <Image
-          className={classNames(style.img)}
           src="/images/temperature.png"
           alt=""
-          /* width={100} height={500}  */ fill={true}
+          width={550}
+          height={300}
+          layout="responsive"
         />
         <Image
-          className={classNames(style.img)}
           src="/images/winds.png"
           alt=""
-          /* width={100} height={500}  */ fill={true}
+          width={550}
+          height={300}
+          layout="responsive"
         />
       </div>
-      {/* </div> */}
     </div>
   );
 }

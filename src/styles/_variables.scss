@@ -1,4 +1,14 @@
-$background-color: #fcffff;
-$component-background-color: #a6bbd2;
+$misty-blue: #fcffff;
+$light-blue: #a6bbd2;
+$blue: #46719e;
+$dark-blue: #1c4570;
+
+$background-color: $misty-blue;
+$component-background-color: darken($light-blue, 10%);
+
+$link-primary: $dark-blue;
+$link-secondary: $blue;
+$link-hover: $light-blue;
+
 // $foreground-color: blue;
 $font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

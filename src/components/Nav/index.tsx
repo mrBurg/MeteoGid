@@ -7,9 +7,8 @@ import { usePathname } from 'next/navigation';
 import style from './index.module.scss';
 
 const mainMenu = [
-  { text: 'Home', href: '/' },
-  { text: 'About Us', href: '/about-us' },
-  { text: 'Contacts', href: '/contacts' },
+  { text: 'Про нас', href: '/about-us' },
+  { text: 'Контакти', href: '/contacts' },
 ];
 
 export function Nav() {

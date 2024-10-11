@@ -1,5 +1,10 @@
+import Link from 'next/link';
 import LogoImage from './logo.svg';
 
 export function Logo() {
-  return <LogoImage />;
+  return (
+    <Link href={'/'}>
+      <LogoImage />
+    </Link>
+  );
 }

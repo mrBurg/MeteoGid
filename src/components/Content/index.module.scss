@@ -1,13 +1,9 @@
 @import './../../styles/variables';
 
 .content {
-    color: $background-color;
-    position: relative;
-}
-
-.img {
-    // object-fit: contain;
-    position: relative !important;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 .cols {

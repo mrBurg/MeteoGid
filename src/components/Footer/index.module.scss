@@ -3,7 +3,7 @@
 .footer {
     // text-align: center;
     border-radius: 0 0 80px 0;
-    background-color: darken($component-background-color, 10%);
+    background-color: $component-background-color;
     display: flex;
     justify-content: center;
     align-items: center;

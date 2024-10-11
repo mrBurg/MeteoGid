@@ -28,11 +28,25 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: $dark-blue;
 }
 
 a {
-    color: inherit;
+    color: $link-primary;
     text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+        color: $link-hover;
+    }
+
+    &.primary {
+        color: $link-primary;
+    }
+
+    &.secondary {
+        color: $link-secondary;
+    }
 }
 
 // @media (prefers-color-scheme: dark) {
