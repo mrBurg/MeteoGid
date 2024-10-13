@@ -5,6 +5,13 @@
 }*/
 
 declare module '*.svg' {
-  export const ReactComponent: string;
+  const ReactComponent: string;
+
   export default ReactComponent;
+}
+
+declare module '*.po' {
+  const poModule: { [key: string]: string };
+
+  export default poModule;
 }

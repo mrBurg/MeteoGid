@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: MeteoGid\n"
+"Language: uk\n"
+
+#: 
+msgid "Site title"
+msgstr "Сайт компанії MeteoGid"
+
+#: 
+msgid "Site description"
+msgstr "Погода від MeteoGid"
+
+#: 
+msgid "now"
+msgstr "зараз"
+
+#: 
+msgid "today"
+msgstr "сьогодні"
+
+#: 
+msgid "Kyiv"
+msgstr "Київ"
+
+#: 
+msgid "UA"
+msgstr "Україна"
+
+#: 
+msgid "Weather"
+msgstr "Погода"

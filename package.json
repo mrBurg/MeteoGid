@@ -11,16 +11,20 @@
   "dependencies": {
     "classnames": "^2.5.1",
     "next": "14.2.15",
+    "node-gettext": "^3.0.0",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
+    "@types/node-gettext": "^3.0.6",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.15",
+    "json-loader": "^0.5.7",
+    "po-gettext-loader": "^1.0.0",
     "sass": "^1.79.4",
     "typescript": "^5",
     "url-loader": "^4.1.1"

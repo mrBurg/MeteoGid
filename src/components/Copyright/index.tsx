@@ -1,5 +1,3 @@
-'use client';
-
 import classNames from 'classnames';
 
 import style from './index.module.scss';

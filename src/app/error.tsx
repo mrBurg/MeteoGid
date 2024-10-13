@@ -1,6 +1,9 @@
 'use client';
 
+import classNames from 'classnames';
 import { useEffect } from 'react';
+
+import style from './index.module.scss';
 
 export default function Error({
   error,
@@ -14,7 +17,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <div>
+    <div className={classNames(style.error)}>
       <h2>Щось пішло не так!</h2>
       <button onClick={() => reset()}>Спробуйте знову</button>
     </div>
