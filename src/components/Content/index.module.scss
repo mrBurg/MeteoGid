@@ -1,29 +1,65 @@
 @import './../../styles/variables';
 
 .content {
-    gap: 2em;
-    display: flex;
-    flex-direction: column;
+    grid-gap: 1em;
+    display: grid;
+    align-content: start;
+}
+
+@keyframes scroll-background {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -960px 0;
+    }
 }
 
 .weather {
-    background: $component-background-color url('/images/weather.png') left top /
-        cover;
+    background: $component-background-color url('/images/weather.png') 0 0 /
+        cover repeat-x;
+    color: $misty-blue;
+    background-position: 0 0;
+    animation: scroll-background 20s linear infinite;
 }
 
-.overhead {
+.overhead,
+.today {
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.title {
+    padding: 0 20px;
+
+    font-size: 3em;
+}
+
+.temperature {
+    font-size: 5em;
+    padding: 0 20px;
+}
+
+.show_more {
+    text-align: right;
+}
+
+.today {
+    font-size: 1.5em;
+    border-bottom: 1px solid $misty-blue;
 }
 
 .forecast {
     display: inline-flex;
     position: absolute;
+    padding: 2em 20px;
 
     &__wrap {
         overflow-x: scroll;
         width: 100%;
-        height: 340px;
+        height: 280px;
         position: relative;
 
         &::after {
@@ -35,13 +71,24 @@
 
     &__item {
         width: 200px;
+        text-align: center;
+        display: grid;
+        gap: 1em;
+    }
+
+    &__time {
+        font-size: 1.5em;
+    }
+    &__temperature {
+        font-size: 3em;
+    }
+    &__icon {
+        margin-top: 1em;
     }
 }
 
 .cols {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
 }
-
-/* .img {
-    object-fit: cover;
-} */

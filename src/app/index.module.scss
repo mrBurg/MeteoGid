@@ -2,11 +2,10 @@
 
 .page {
     display: grid;
-    grid-template-rows: minmax(80px, auto) 1fr 50px;
+    grid-template-rows: auto /* minmax(80px, auto) */ 1fr 50px;
     min-height: 100svh;
     background: $background-color url('/images/background.jpg') center 100% /
         cover fixed;
-
     padding: 0 10%;
 }
 
@@ -20,14 +19,10 @@
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-}
-
-.content {
-    padding: 1em;
+    display: grid;
+    grid-auto-rows: auto 1fr;
     background-color: transparentize($background-color, 0.5);
-    flex-grow: 1;
+    padding: 1em;
 }
 
 // /* Enable hover only on non-touch devices */

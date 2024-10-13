@@ -1,0 +1,93 @@
+<svg
+    version="1.1"
+    id="Layer_1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px"
+    y="0px"
+    width="87.5px"
+    height="61.58px"
+    viewBox="0 0 87.5 61.58"
+    enable-background="new 0 0 87.5 61.58"
+    xml:space="preserve"
+>
+    <line
+        fill="none"
+        stroke="#FFF200"
+        stroke-width="5"
+        stroke-linecap="round"
+        stroke-miterlimit="10"
+        x1="59.01"
+        y1="3.06"
+        x2="59.01"
+        y2="53.89"
+    />
+
+    <line
+        fill="none"
+        stroke="#FFF200"
+        stroke-width="5"
+        stroke-linecap="round"
+        stroke-miterlimit="10"
+        x1="84.43"
+        y1="28.48"
+        x2="33.59"
+        y2="28.48"
+    />
+
+    <line
+        fill="none"
+        stroke="#FFF200"
+        stroke-width="5"
+        stroke-linecap="round"
+        stroke-miterlimit="10"
+        x1="46.3"
+        y1="6.47"
+        x2="71.72"
+        y2="50.49"
+    />
+
+    <line
+        fill="none"
+        stroke="#FFF200"
+        stroke-width="5"
+        stroke-linecap="round"
+        stroke-miterlimit="10"
+        x1="81.02"
+        y1="15.77"
+        x2="37"
+        y2="41.19"
+    />
+
+    <line
+        fill="none"
+        stroke="#FFF200"
+        stroke-width="5"
+        stroke-linecap="round"
+        stroke-miterlimit="10"
+        x1="37"
+        y1="15.77"
+        x2="81.02"
+        y2="41.19"
+    />
+
+    <line
+        fill="none"
+        stroke="#FFF200"
+        stroke-width="5"
+        stroke-linecap="round"
+        stroke-miterlimit="10"
+        x1="71.72"
+        y1="6.47"
+        x2="46.3"
+        y2="50.49"
+    />
+    <circle fill="#FFF200" cx="59.01" cy="28.48" r="16.05" />
+    <path
+        fill="#FFFFFF"
+        d="M61.83,52.17c6.35,0,11.5-5.15,11.5-11.5c0-6.35-5.15-11.5-11.5-11.5c-1.24,0-2.43,0.2-3.55,0.56
+		c-0.48-5.91-5.42-10.56-11.45-10.56c-1.61,0-3.13,0.33-4.52,0.93c0.01-0.14,0.02-0.28,0.02-0.43c0-5.25-4.25-9.5-9.5-9.5
+		c-4.53,0-8.31,3.17-9.26,7.41c-0.87-0.26-1.79-0.41-2.74-0.41c-5.25,0-9.5,4.25-9.5,9.5c0,0.87,0.13,1.71,0.35,2.51
+		C5.4,29.26,0.33,34.37,0.33,40.67c0,6.35,5.15,11.5,11.5,11.5H61.83z"
+    />
+</svg>

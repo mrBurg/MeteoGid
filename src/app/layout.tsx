@@ -3,10 +3,7 @@ import type { Metadata, Viewport } from 'next';
 // import localFont from 'next/font/local';
 
 import './../styles/globals.scss';
-import styles from './index.module.scss';
 
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
 import { gt } from '@/utils';
 
 /* const geistSans = localFont({
@@ -39,13 +36,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <body className={`${geistSans.variable} ${geistMono.variable}`}> */}
-      <body>
-        <div className={styles.page}>
-          <Header />
-          <main className={styles.main}>{children}</main>
-          <Footer />
-        </div>
+      <body /* className={`${geistSans.variable} ${geistMono.variable}`} */>
+        {children}
       </body>
     </html>
   );
